@@ -1,0 +1,20 @@
+.Country{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.Countries{
+    width: 100px;
+    height: 80px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px #ccc;
+}
+.countryBlock{
+    width: 150px;
+}
+.NameCountries{
+    cursor: pointer;
+}

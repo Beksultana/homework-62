@@ -7,8 +7,29 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.Container{
+  text-align: center;
+}
+.link{
+    margin: 0 20px;
+    /*display: inline-block;*/
+}
+.links ul li {
+    display: inline-block;
+    /*text-decoration: none;*/
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+nav ul li {
+    margin-right: 15px;
+}
+a.active, a.linkActive{
+    font-weight: bold;
+    color: rgba(0,102,181,0.81);
 }
