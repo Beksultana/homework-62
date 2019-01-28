@@ -35,7 +35,7 @@ class App extends Component {
                               background: 'gold'
                           }}
                       >
-                          About
+                          Phone
                       </NavLink>
                   </li>
                   <li>

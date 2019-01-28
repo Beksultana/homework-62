@@ -3,6 +3,7 @@ import './About.css';
 import {withRouter} from 'react-router-dom';
 
 class About extends Component {
+
     state = {
         phones: [
             {name: 'Samsung'},
@@ -23,7 +24,10 @@ class About extends Component {
                 <hr/>
                 {
                     this.state.phones.map((iphone, index) => (
-                        <div key={index} className="iphoneBlock">
+                        <div
+                            onClick={() => this.props.history.push('/about/' + iphone.name.toLowerCase()) }
+                            key={index} className="iphoneBlock"
+                        >
                             <h1 >{iphone.name}</h1>
                         </div>
                     ))
