@@ -20,10 +20,9 @@ class Country extends Component {
     };
 
     render() {
-        console.log(this.props);
         return (
             <Fragment>
-                <button onClick={this.gotoHomePage}>Home</button>
+                <button className={'btn'} onClick={this.gotoHomePage}>Go to Home</button>
                 <hr/>
                 <div className='Country'>
                     {
@@ -37,7 +36,7 @@ class Country extends Component {
                                     className={'Countries'}
                                     src={country.flag} alt=""/>
 
-                                <h3 {...this.props} className={'NameCountries'} key={index}>{country.name}</h3>
+                                <h3 className={'NameCountries'} key={index}>{country.name}</h3>
                             </div>
                         ))
                     }

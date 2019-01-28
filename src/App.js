@@ -15,17 +15,24 @@ class App extends Component {
                       <NavLink
                           className='link'
                           to="/"
-                          exact activeClassName={'linkActive'}
+                          exact activeClassName={'linkActiveHome '}
+                          activeStyle={{
+                          color: 'black',
+                          background: 'gold'
+                      }}
+
                       >
                           Home
                       </NavLink>
                   </li>
                   <li>
                       <NavLink
+                          activeClassName={'linkActiveAbout'}
                           className='link'
                           to="/about"
                           activeStyle={{
-                              color: 'red'
+                              color: 'black',
+                              background: 'gold'
                           }}
                       >
                           About
@@ -33,10 +40,12 @@ class App extends Component {
                   </li>
                   <li>
                       <NavLink
+                          activeClassName={'linkActiveCountries'}
                           className='link'
                           to="/country"
                           activeStyle={{
-                              color: 'green'
+                              color: 'black',
+                              background: 'gold'
                           }}
                       >
                           Country
@@ -46,8 +55,8 @@ class App extends Component {
           </nav>
          <Switch>
              <Route path="/" exact component={Home}/>
-             <Route path="/about"  component={About}/>
-             <Route path="/country"  component={Country}/>
+             <Route path="/about" exact component={About}/>
+             <Route path="/country" exact component={Country}/>
          </Switch>
       </div>
     );

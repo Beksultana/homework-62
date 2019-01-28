@@ -29,7 +29,21 @@ nav ul {
 nav ul li {
     margin-right: 15px;
 }
-a.active, a.linkActive{
+a.active, a.linkActiveHome{
     font-weight: bold;
     color: rgba(0,102,181,0.81);
+}
+a.link{
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255,107,109,0.81);
+}
+.btn{
+    padding: 10px;
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    border: transparent;
 }

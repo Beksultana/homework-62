@@ -1,0 +1,26 @@
+.About{
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+}
+.iphoneBlock{
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 400px;
+    margin: 10px auto;
+    cursor: pointer;
+    box-shadow: 0 2px 2px #ccc;
+
+}
+.iphoneBlock:hover {
+   color: white;
+    animation: animation 6s infinite
+
+
+}
+@keyframes animation {
+    0%   {background-color: rgba(219,57,71,0.81);}
+    25%   {background-color: rgba(255,107,109,0.81) ;}
+    50%   {background-color: rgba(219,0,72,0.81);}
+    100%   {background-color: crimson;}
+}
