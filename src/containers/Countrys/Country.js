@@ -27,7 +27,7 @@ class Country extends Component {
                 <div className='Country'>
                     {
                         this.state.countries.map((country, index) => (
-                            <div
+                            <div onClick={() => this.props.history.push('/country/' + country.name.toLowerCase())}
                                 key={index}
                                 className="countryBlock"
 
